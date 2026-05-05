@@ -11,11 +11,22 @@ public class UserDao {
         try 
         {  
             Class.forName("com.mysql.cj.jdbc.Driver");  
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","aryan");  
+            
+            // Deployment-friendly: Use environment variables with local fallbacks
+            String host = System.getenv("DB_HOST") != null ? System.getenv("DB_HOST") : "localhost";
+            String port = System.getenv("DB_PORT") != null ? System.getenv("DB_PORT") : "3306";
+            String dbName = System.getenv("DB_NAME") != null ? System.getenv("DB_NAME") : "test";
+            String user = System.getenv("DB_USER") != null ? System.getenv("DB_USER") : "root";
+            String pass = System.getenv("DB_PASS") != null ? System.getenv("DB_PASS") : "aryan";
+            
+            String url = String.format("jdbc:mysql://%s:%s/%s?useSSL=false&allowPublicKeyRetrieval=true", host, port, dbName);
+            
+            con = DriverManager.getConnection(url, user, pass);  
         } 
         catch(Exception e) 
         {  
-            System.out.println(e);  
+            System.err.println("Database Connection Error: " + e.getMessage());
+            e.printStackTrace();
         }  
         return con;  
     }  

@@ -1,0 +1,27 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Eclipse Metadata
+.metadata
+.settings/
+.project
+.classpath
+
+# Build directory
+build/
+bin/
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+
+# Environment variables
+.env
