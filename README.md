@@ -1,16 +1,18 @@
+<div align="center">
+
 # 💎 Premium User Management MIS
 🚀 **A professional, high-performance User Management System built with Advanced Java.**
 
 ---
 
-<p align="left">
+<p align="center">
   <a href="https://premium-user-management-mis.onrender.com">
     <img src="https://img.shields.io/badge/🚀%20LIVE%20APP-ON%20RENDER-7c3aed?style=for-the-badge&logo=render&logoColor=white" />
   </a>
   <img src="https://img.shields.io/badge/⚙️%20DATABASE-RAILWAY%20ONLINE-007ACC?style=for-the-badge&logo=mysql&logoColor=white" />
 </p>
 
-<p align="left">
+<p align="center">
   <img src="https://img.shields.io/badge/JAVA-OPENJDK-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/DATABASE-MYSQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/SERVER-TOMCAT-F8DC75?style=for-the-badge&logo=apache-tomcat&logoColor=black" />
@@ -18,11 +20,15 @@
 </p>
 
 ---
+
+### 🚀 Overview
 **Premium User Management MIS** is a full-stack Java web application designed to manage user records with a focus on **UI/UX excellence** and **secure backend architecture**.
 
 Instead of a basic table, users interact with a **Glassmorphism-styled dashboard** that is responsive and production-ready.
 
 ---
+
+</div>
 
 ## ✨ Features
 - 🌑 **Premium Dark UI** – Sleek, modern design with glassmorphism effects
