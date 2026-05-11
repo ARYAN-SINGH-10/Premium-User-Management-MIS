@@ -53,7 +53,8 @@ public class UserDao {
         } 
         catch(Exception e) 
         {  
-            System.out.println(e);  
+            System.err.println("Error in UserDao.save: " + e.getMessage());
+            e.printStackTrace();
         }  
         return status;  
     }  
@@ -78,7 +79,8 @@ public class UserDao {
         }
        catch(Exception e)
        {
-    	   System.out.println(e);
+           System.err.println("Error in UserDao.getAllRecords: " + e.getMessage());
+           e.printStackTrace();
        }
        
         return list;  
@@ -96,7 +98,8 @@ public class UserDao {
         }
         catch(Exception e)
         {
-        	System.out.println(e);
+            System.err.println("Error in UserDao.delete: " + e.getMessage());
+            e.printStackTrace();
         }  
       
         return status;  
@@ -123,7 +126,8 @@ public class UserDao {
         }
         catch(Exception e)
         {
-        	System.out.println(e);
+            System.err.println("Error in UserDao.getRecordById: " + e.getMessage());
+            e.printStackTrace();
         }  
         return u;  
     }
@@ -143,7 +147,8 @@ public class UserDao {
         }
         catch(Exception e)
         {
-        	System.out.println(e);
+            System.err.println("Error in UserDao.update: " + e.getMessage());
+            e.printStackTrace();
         }  
         return status;  
     }  
