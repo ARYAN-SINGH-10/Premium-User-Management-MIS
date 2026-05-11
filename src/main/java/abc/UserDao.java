@@ -32,7 +32,7 @@ public class UserDao {
     }  
 
     
-    public static int save(User u) {  
+    public static int save(User u) throws Exception {  
         int status = 0;  
         try 
         {  
@@ -55,6 +55,7 @@ public class UserDao {
         {  
             System.err.println("Error in UserDao.save: " + e.getMessage());
             e.printStackTrace();
+            throw e; // Re-throw so JSP can catch it
         }  
         return status;  
     }  
@@ -86,7 +87,7 @@ public class UserDao {
         return list;  
     } 
     
-    public static int delete(int id)
+    public static int delete(int id) throws Exception
     {  
         int status=0;  
         try
@@ -100,6 +101,7 @@ public class UserDao {
         {
             System.err.println("Error in UserDao.delete: " + e.getMessage());
             e.printStackTrace();
+            throw e;
         }  
       
         return status;  
@@ -132,7 +134,7 @@ public class UserDao {
         return u;  
     }
     
-    public static int update(User u)
+    public static int update(User u) throws Exception
     {
           int status=0;  
         try{
@@ -149,6 +151,7 @@ public class UserDao {
         {
             System.err.println("Error in UserDao.update: " + e.getMessage());
             e.printStackTrace();
+            throw e;
         }  
         return status;  
     }  
