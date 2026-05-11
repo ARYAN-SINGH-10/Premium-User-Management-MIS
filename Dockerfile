@@ -1,5 +1,5 @@
-# Use Tomcat 9 with JDK 17
-FROM tomcat:9.0-jdk17-openjdk-slim
+# Use Tomcat 9 with JDK 21
+FROM tomcat:9.0-jdk21-temurin-jammy
 
 # Maintainer Info
 LABEL maintainer="User MIS"
