@@ -8,7 +8,9 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<p>Record successfully saved!</p>
-<jsp:include page="userform.html"></jsp:include>
+<div class="container">
+    <div class="notification success">Record successfully saved!</div>
+    <jsp:include page="userform.html"></jsp:include>
+</div>
 </body>
 </html>
