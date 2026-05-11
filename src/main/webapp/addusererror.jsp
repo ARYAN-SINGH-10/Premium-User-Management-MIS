@@ -9,6 +9,13 @@
 </head>
 <body>
 <p>Sorry, an error occured!</p>
+<%
+    String error = (String) session.getAttribute("lastError");
+    if(error != null) {
+        out.print("<div style='color: #ff4d4d; background: rgba(255,77,77,0.1); padding: 10px; border-radius: 5px; margin: 10px 0;'><strong>Error Details:</strong> " + error + "</div>");
+        session.removeAttribute("lastError");
+    }
+%>
 <jsp:include page="userform.html"></jsp:include>
 </body>
 </html>

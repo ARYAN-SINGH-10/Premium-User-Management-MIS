@@ -15,13 +15,17 @@
 <jsp:useBean id="u" class="abc.User"></jsp:useBean>
 <jsp:setProperty property="*" name="u"/>
 <%
-int i=UserDao.save(u);
-if(i>0){
-	response.sendRedirect("addusersuccess.jsp");
-	}
-	else{
-	response.sendRedirect("addusererror.jsp");
-	}
+try {
+    int i = UserDao.save(u);
+    if(i > 0){
+        response.sendRedirect("addusersuccess.jsp");
+    } else {
+        response.sendRedirect("addusererror.jsp?error=InsertFailed");
+    }
+} catch (Exception e) {
+    session.setAttribute("lastError", e.getMessage());
+    response.sendRedirect("addusererror.jsp");
+}
 %>
 
 </body>
