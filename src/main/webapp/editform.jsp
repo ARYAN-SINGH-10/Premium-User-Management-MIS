@@ -13,7 +13,7 @@ User u=UserDao.getRecordById(id1);
 %>
 <body>
 <div class="container">
-    <a href="viewusers.jsp">← Back to Database</a>
+    <a href="viewusers.jsp">&larr; Back to Database</a>
     <h1>Modify User Details</h1>
     <form action="edituser.jsp" method="post">
         <input type="hidden" name="id" value="<%=u.getId() %>"/>
