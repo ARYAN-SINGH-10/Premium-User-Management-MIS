@@ -3,9 +3,21 @@
 
 ---
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-7c3aed?style=for-the-badge&logo=render&logoColor=white)](https://premium-user-management-mis.onrender.com)
+<p align="left">
+  <a href="https://premium-user-management-mis.onrender.com">
+    <img src="https://img.shields.io/badge/🚀%20LIVE%20APP-ON%20RENDER-7c3aed?style=for-the-badge&logo=render&logoColor=white" />
+  </a>
+  <img src="https://img.shields.io/badge/⚙️%20DATABASE-RAILWAY%20ONLINE-007ACC?style=for-the-badge&logo=mysql&logoColor=white" />
+</p>
 
-## 🚀 Overview
+<p align="left">
+  <img src="https://img.shields.io/badge/JAVA-OPENJDK-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/DATABASE-MYSQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SERVER-TOMCAT-F8DC75?style=for-the-badge&logo=apache-tomcat&logoColor=black" />
+  <img src="https://img.shields.io/badge/FRONTEND-HTML5%20%26%20CSS3-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+</p>
+
+---
 **Premium User Management MIS** is a full-stack Java web application designed to manage user records with a focus on **UI/UX excellence** and **secure backend architecture**.
 
 Instead of a basic table, users interact with a **Glassmorphism-styled dashboard** that is responsive and production-ready.
